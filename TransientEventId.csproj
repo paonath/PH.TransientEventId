@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- NuGet package metadata -->
+    <Version>1.0.0</Version>
+    <Authors>Paolo Innocenti &lt;paonath@gmail.com&gt;</Authors>
+    <Company>Paolo Innocenti</Company>
+    <PackageId>TransientEventId</PackageId>
+    <Title>TransientEventId</Title>
+    <Description>Minimal struct for logging event identifiers, API-compatible with Microsoft.Extensions.Logging.EventId but without a direct dependency.</Description>
+    <PackageTags>logging;eventid;dotnet;netstandard;struct</PackageTags>
+    <RepositoryUrl>https://github.com/paonath/PH.TransientEventId</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/paonath/PH.TransientEventId</PackageProjectUrl>
+    <Copyright>Copyright © 2025 Paolo Innocenti</Copyright>
+    <PackageReleaseNotes>Initial release. API-compatible with Microsoft.Extensions.Logging.EventId.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="[1.1.1,)">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Link="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+
+
+</Project>
